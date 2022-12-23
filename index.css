@@ -235,7 +235,7 @@ html {
   }
 
   html {
-    overflow: visible;
+    overflow: hidden;
     width: 100%;
   }
   .container {
