@@ -10,7 +10,7 @@ const noencontrado = document.querySelector('.no-encontrado');
 const palabra = document.querySelector('.palabra');
 const img = document.querySelector(".img");
 const mensaje = document.querySelector('.mensaje');
-
+input.focus()
 input?.addEventListener('change', Actualizar)
 btn1?.addEventListener('click', Encriptar)
 btn2?.addEventListener('click', Desencriptar)
