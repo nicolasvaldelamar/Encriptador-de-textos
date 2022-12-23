@@ -1,16 +1,31 @@
 
 const input = document.querySelector('.input');
-const btn1 = document.querySelector('.css-button-retro--sky')
-const btn2 = document.querySelector('.css-button-retro--sky1')
-const no = document.querySelector('.no')
-const si = document.querySelector('.si')
-const output = document.querySelector('.output')
-const noencontrado = document.querySelector('.no-encontrado')
-const palabra = document.querySelector('.palabra')
+const btn1 = document.querySelector('.css-button-retro--sky');
+const btn2 = document.querySelector('.css-button-retro--sky1');
+const btn3 = document.querySelector('.css-button-retro--sky3');
+const no = document.querySelector('.no');
+const si = document.querySelector('.si');
+const output = document.querySelector('.output');
+const noencontrado = document.querySelector('.no-encontrado');
+const palabra = document.querySelector('.palabra');
+const img = document.querySelector(".img");
+const mensaje = document.querySelector('.mensaje');
 
 input?.addEventListener('change', Actualizar)
 btn1?.addEventListener('click', Encriptar)
 btn2?.addEventListener('click', Desencriptar)
+btn3?.addEventListener('click', ()=>{ 
+    mensaje.select();
+    navigator.clipboard.writeText(mensaje.value)
+    mensaje.value = "";
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Texto copiado',
+        showConfirmButton: false,
+        timer: 1000
+      })
+})
 let cadena;
 let array;
 let r;
@@ -39,14 +54,18 @@ function Encriptar(){
      }
    }
    r = array;
+   mensaje.style.visibility = 'visible';
+   img.style.visibility = 'hidden';
    noencontrado.style.visibility = 'hidden';
    palabra.innerText = ""
    palabra.style.fontSize = "20pt";
+   palabra.style.visibility = 'hidden';
+   btn3.style.visibility = 'visible';
    cadena2 = r[0]
    for(let i = 0; i < r.length - 1; i++){
     cadena2 += r[i+1]
    }
-   palabra.innerText = cadena2
+   mensaje.value = cadena2
 }
 
 function Desencriptar(){
@@ -58,9 +77,13 @@ function Desencriptar(){
                 cadena = cadena.replaceAll(matriz[i][1], matriz[i][0])
             }
         }
-    noencontrado.style.visibility = 'hidden';
-    palabra.innerText = ""
-    palabra.style.fontSize = "20pt";
-    palabra.innerText = cadena
+        mensaje.style.visibility = 'visible';
+        btn3.style.visibility = 'visible';
+        img.style.visibility = 'hidden';
+        noencontrado.style.visibility = 'hidden';
+        palabra.style.visibility = 'hidden';
+        palabra.innerText = ""
+        palabra.style.fontSize = "20pt";
+        mensaje.value = cadena
 }
     
