@@ -232,7 +232,7 @@ html {
   }
 
   html {
-    overflow-x: hidden;
+    overflow: visible;
     width: 100%;
   }
   .container {
