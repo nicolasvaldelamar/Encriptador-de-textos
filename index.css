@@ -1,83 +1,76 @@
-@import url('https://fonts.cdnfonts.com/css/cascadia-code');
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'Cascadia Code', sans-serif;
+@import url("https://fonts.cdnfonts.com/css/cascadia-code");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Cascadia Code", sans-serif;
 }
 
-html{
-    overflow: hidden;
+html {
+  overflow: hidden;
 }
 
-.container{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: #F3F5FC;
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #f3f5fc;
 }
-.aside{
-    position: absolute;
-    width: 400px;
-    height: 90vh;
-    left: 1000px;
-    top: 20px;
-    background: #FFFFFF;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-
+.aside {
+  position: absolute;
+  width: 400px;
+  height: 90vh;
+  left: 1000px;
+  top: 20px;
+  background: #ffffff;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
 }
-.container .input{
-    position: absolute;
-    width: 600px;
-    height: 400px;
-    left: 240px;
-    top: 168px;
-    border: none;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 150%;
-    background: #F3F5FC;
-    border: none;
-    outline: none;
-    color: #0A3871;
-}
-
-
-.container .input::placeholder{
-    color: #0A3871;
-
-    
+.container .input {
+  position: absolute;
+  width: 600px;
+  height: 400px;
+  left: 240px;
+  top: 168px;
+  border: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+  background: #f3f5fc;
+  border: none;
+  outline: none;
+  color: #0a3871;
 }
 
-
-.container .input:focus{
-    border: none;
+.container .input::placeholder {
+  color: #0a3871;
 }
 
-
-.container .p{
-    position: absolute;
-    left: 15.67%;
-    right: 37.43%;
-    top: 50px;
-    bottom: 0%;
-    font-size: 16pt;
-    color: #0A3871;
+.container .input:focus {
+  border: none;
 }
 
-.botones{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 24px;
-    z-index: 10;
-    position: absolute;
-    width: 680px;
-    height: 67px;
-    left: 240px;
-    top: 600px;
+.container .p {
+  position: absolute;
+  left: 15.67%;
+  right: 37.43%;
+  top: 50px;
+  bottom: 0%;
+  font-size: 16pt;
+  color: #0a3871;
+}
 
+.botones {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  z-index: 10;
+  position: absolute;
+  width: 680px;
+  height: 67px;
+  left: 240px;
+  top: 600px;
 }
 
 .css-button-retro--sky {
@@ -95,7 +88,6 @@ html{
   border: 1px solid #000;
   color: #000;
   background: transparent;
-  
 }
 
 .css-button-retro--sky:hover:after {
@@ -116,121 +108,229 @@ html{
 }
 
 .css-button-retro--sky1 {
-    min-width: 130px;
-    height: 40px;
-    color: #fff;
-    padding: 10px 90px;
-    font-size: 15pt;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    outline: none;
-    border: 1px solid #000;
-    color: #000;
-    background: transparent;
-    
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 10px 90px;
+  font-size: 15pt;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border: 1px solid #000;
+  color: #000;
+  background: transparent;
 }
 
 .css-button-retro--sky1:hover:after {
-    top: 0;
-    left: 0;
+  top: 0;
+  left: 0;
 }
 .css-button-retro--sky1:after {
-    content: "";
-    width: 100%;
-    z-index: -1;
-    position: absolute;
-    height: 100%;
-    top: 5px;
-    left: 5px;
-    transition: 0.2s;
-    background-color: #90969e;
+  content: "";
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 5px;
+  left: 5px;
+  transition: 0.2s;
+  background-color: #90969e;
 }
 .css-button-retro--sky3 {
-    min-width: 130px;
-    height: 40px;
-    color: #fff;
-    padding: 10px 90px;
-    font-size: 15pt;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    outline: none;
-    border: 1px solid #000;
-    color: #000;
-    z-index: 10;
-    background: transparent;
-    visibility: hidden;
-    margin-bottom: 20px;
-    
-  }
-  
-  .mensaje{
-    width: 100%;
-    height: 100%;
-    border: none;
-    outline: none;
-    font-size: 20pt;
-    text-align: center;
-    visibility: hidden;
-    
-  }
-  .css-button-retro--sky3:hover:after {
-    top: 0;
-    left: 0;
-  }
-  
-  .css-button-retro--sky3:after {
-    content: "";
-    width: 100%;
-    z-index: -1;
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 10px 90px;
+  font-size: 15pt;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border: 1px solid #000;
+  color: #000;
+  z-index: 10;
+  background: transparent;
+  visibility: hidden;
+  margin-bottom: 20px;
+}
+
+.mensaje {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 20pt;
+  text-align: center;
+  visibility: hidden;
+}
+.css-button-retro--sky3:hover:after {
+  top: 0;
+  left: 0;
+}
+
+.css-button-retro--sky3:after {
+  content: "";
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 5px;
+  left: 5px;
+  transition: 0.2s;
+  background-color: #fce7005a;
+}
+.no {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
+.no img {
+  width: 300px;
+}
+
+.no h2 {
+  font-size: 14pt;
+}
+
+.no .palabra {
+  width: 100%;
+  text-align: center;
+}
+
+.aviso {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  position: absolute;
+  width: 329px;
+  height: 18px;
+  left: 240px;
+  top: 576px;
+}
+
+@media (max-width: 925px) {
+  .p {
     position: absolute;
-    height: 100%;
-    top: 5px;
-    left: 5px;
-    transition: 0.2s;
-    background-color: #fce7005a;
+    left: 5.21%;
+    right: 90.74%;
+    top: 6.25%;
+    bottom: 89.8%;
+    font-size: 20pt;
+
+    /* Dark blue/dark-blue-300 */
+
+    color: #0a3871;
   }
-.no{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100%;
+
+  html {
+    overflow: visible;
     width: 100%;
-    z-index: 10;
-    
-}
+  }
+  .container {
+    position: absolute;
+    width: 790px;
+    height: 200vh;
 
-.no img{
-    width: 300px;
-}
+    /* Light blue/light-blue-100 */
 
-.no h2{
-    font-size: 14pt;
-}
-
-.no .palabra{
-    width: 100%;
-    text-align: center;
- 
-}
-
-
-.aviso{
+    background: #f3f5fc;
+  }
+  .botones {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     padding: 0px;
-    gap: 8px;
-    position: absolute;
-    width: 329px;
-    height: 18px;
-    left: 240px;
-    top: 576px;
+    gap: 24px;
 
+    position: absolute;
+    width: 688px;
+    height: 67px;
+    left: 80px;
+    top: 870px;
+  }
+  .container .input {
+    position: absolute;
+    width: 688px;
+    height: 300px;
+    left: 40px;
+    top: 240px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    /* identical to box height, or 48px */
+
+    /* Dark blue/dark-blue-300 */
+
+    color: #0a3871;
+  }
+
+  .mensaje {
+    width: 624px;
+    height: 150px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 140%;
+    /* or 36px */
+
+    /* Gray/gray-400 */
+
+    color: #495057;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  .aside {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px;
+    gap: 32px;
+
+    position: absolute;
+    width: 688px;
+    height: 330px;
+    left: 20px;
+    top: 1001px;
+
+    /* White */
+
+    background: #ffffff;
+    /* shadow */
+
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+  }
+  .aviso {
+    width: 350px;
+    height: 16px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    top: 836px;
+  }
+
+  .css-button-retro--sky3 {
+    margin-bottom: 20px;
+  }
 }
