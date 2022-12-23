@@ -228,23 +228,17 @@ html {
     top: 6.25%;
     bottom: 89.8%;
     font-size: 20pt;
-
-    /* Dark blue/dark-blue-300 */
-
     color: #0a3871;
   }
 
   html {
-    overflow: hidden;
+    overflow-y: hidden;
     width: 100%;
   }
   .container {
     position: absolute;
     width: 790px;
     height: 200vh;
-
-    /* Light blue/light-blue-100 */
-
     background: #f3f5fc;
   }
   .botones {
@@ -270,10 +264,6 @@ html {
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
-    /* identical to box height, or 48px */
-
-    /* Dark blue/dark-blue-300 */
-
     color: #0a3871;
   }
 
@@ -285,14 +275,7 @@ html {
     font-weight: 400;
     font-size: 34px;
     line-height: 140%;
-    /* or 36px */
-
-    /* Gray/gray-400 */
-
     color: #495057;
-
-    /* Inside auto layout */
-
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -309,22 +292,14 @@ html {
     height: 330px;
     left: 20px;
     top: 1001px;
-
-    /* White */
-
     background: #ffffff;
-    /* shadow */
-
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
   }
   .aviso {
     width: 350px;
     height: 16px;
-
-    /* Inside auto layout */
-
-    flex: none;
+     flex: none;
     order: 0;
     flex-grow: 0;
     top: 836px;
